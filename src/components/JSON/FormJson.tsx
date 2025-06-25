@@ -1,4 +1,7 @@
-export const JsonForm = {
+import type { FormPropertiesSchema } from "../types";
+
+
+export const JsonForm: FormPropertiesSchema = {
   type: "object",
   name: "profile",
   label: "Student profile",
@@ -46,8 +49,8 @@ export const JsonForm = {
       name: "universityYears",
       label: "Finished university years",
       integer: true,
-      minimum: 1,
-      maximum: 6,
+      min: 1,
+      max: 6,
     },
     {
       type: "array",
@@ -87,7 +90,7 @@ export const JsonForm = {
       name: "plans",
       label: "Plans for the next year",
       required: true,
-      multiline: true,
+      multiple: true,
     },
     {
       type: "object",

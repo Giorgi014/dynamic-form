@@ -1,0 +1,9 @@
+@mixin displayCenter($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.form_page {
+  @include displayCenter(space-around, flex-start);
+}
